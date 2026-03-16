@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Features {
+    display: flex;
+    padding: 200px 20px 100px 20px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.features-content {
+    width: 100%;
+    max-width: 1165px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.features-content .text {
+    font-size: clamp(2.3rem, 5vw, 3.6rem);
+    font-family: "Playfair Display", serif;
+    color: #fff;
+}
+
+.features-content .cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap on tablets */
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.features-content .card {
+    /* Removed fixed width to allow flex-grow/shrink */
+    flex: 1; 
+    min-width: 280px; /* Prevents cards from getting too skinny */
+    max-width: 355px;
+    height: 450px;
+    padding: 30px;
+    font-size: 1.4em;
+    color: #fff;
+    
+    /* Image Adjustment Properties */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Optional: adds an overlay so text remains readable over images */
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3); 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes text to the bottom of the card */
+    overflow: hidden; /* Essential: keeps the zoom inside the card */
+    transition: background-size 0.5s ease;
+    background-size: 100%; /* Starting point */
+    cursor: pointer;
+}
+
+.features-content .card:hover {
+    background-size: 105%; /* Creates the "Zoom" effect */
+}
+
+.card1 {
+    background-image: url("cards/card1.png");
+}
+
+.card2 {
+    background-image: url("cards/card2.png");
+}
+
+.card3 {
+    background-image: url("cards/card3.png");
+}
+
+@media (max-width: 600px) {
+    .features-content .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .features-content .card {
+        width: 100%;
+        max-width: 100%; /* Full width on mobile */
+        height: 350px; /* Slightly shorter for mobile screens */
+    }
+}

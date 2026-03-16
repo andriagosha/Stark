@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Footer {
+    position: relative;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
+    padding: 20% 0; /* responsive vertical padding */
+}
+
+.footerContent {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: clamp(2rem, 20vw, 20rem);
+    pointer-events: none;
+}

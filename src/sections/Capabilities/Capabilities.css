@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Capabilities {
+    display: flex;
+    padding: 100px 20px;
+    align-items: center;
+}
+
+.capabilities-content {
+    width: 100%;
+    max-width: 1165px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.capabilities-content .capTxt {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.capabilities-content .capTxt h1 {
+    font-size: clamp(2.3rem, 5vw, 5rem);
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    letter-spacing: -0.03em;
+    white-space: wrap;
+    line-height: 1.1;
+}
+
+.capabilities-content .capTxt span {
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+}
+
+.capabilities-content .capP {
+    white-space: wrap;
+    max-width: 520px;
+    font-size: clamp(1rem, 1.1vw, 2.3rem);
+    color: #8a8a8e;
+}
+
+.capabilities-content .capCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.capabilities-content .capCards .capCard {
+    flex: 1fr 1fr 1fr;      /* flexible width with min base */
+    min-width: 300px;     /* prevents cards from being too small */
+    max-width: 375px;     /* limits cards on large screens */
+    aspect-ratio: 4 / 4.5;  /* keeps height proportional automatically */
+    padding: 30px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #181818;
+    border-radius: 10px;
+}
+
+.capabilities-content .capCards .capCard1 {
+    background-image: url("capabilities/cap1.png");
+}
+
+.capabilities-content .capCards .capCard2 {
+    background-image: url("capabilities/cap2.png");
+}
+
+.capabilities-content .capCards .capCard3 {
+    background-image: url("capabilities/cap3.png");
+}
+
+.capabilities-content .capCards .capCard h3, span {
+    white-space: wrap;
+    max-width: 400px;
+}
+
+.capabilities-content .capCards .capCard h3 {
+    color: #fff;
+}
+
+.capabilities-content .capCards .capCard span {
+    color: #8a8a8e;
+    font-weight: 400;
+}

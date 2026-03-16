@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Main FAQ Section */
+.FaqSection {
+    background-color: #000;
+    padding: 80px 20px 200px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FAQ Container */
+.faqContent {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.faqTxt {
+    text-align: center;
+}
+
+/* FAQ Text Section */
+.faqTxt h1 {
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+
+.faqTxt p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #ccc;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* FAQs Wrapper */
+.faqs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Individual FAQ Item */
+.faqItem {
+    border-bottom: 1px solid #333;
+    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Centers the header vertically when the answer is height 0 */
+    justify-content: center; 
+}
+
+/* FAQ Header (The Red Part) */
+.faqName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+    font-weight: 600;
+    color: #fff;
+    /* Red background removed for clean look, but logic is identical */
+}
+
+/* Arrow Rotation */
+.faqName .arrow {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* FAQ Answer - THE FIX */
+.faqAnswer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0; /* No padding when closed = perfect centering for header */
+    margin: 0; /* Removed margin-top to fix the centering bug */
+    /* Cubic-bezier makes the slide feel much more natural/snappy */
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+}
+
+.faqAnswer.open {
+    /* Set max-height closer to actual content size (e.g., 200px) 
+       so the animation doesn't "wait" for 1000px to finish */
+    max-height: 300px; 
+    padding-top: 35px; /* Spacing appears only when open */
+    padding-bottom: 5px;
+}
+
+.faqAnswer p {
+    margin: 0;
+    color: #ddd;
+    line-height: 1.6;
+    font-size: clamp(0.85rem, 2vw, 1.2rem);
+    white-space: normal;
+    word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .faqTxt { text-align: center}
+    .faqTxt h1 { text-align: center; margin-bottom: 10px; }
+    .faqContent { gap: 15px; }
+}

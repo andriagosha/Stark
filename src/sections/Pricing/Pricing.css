@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.Pricing {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pricContent {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.pricTop {
+    border-bottom: 1px solid #222;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.pricTop h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.2;
+    max-width: 670px;
+    text-wrap: balance;
+}
+
+.pricTop h1 span {
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+}
+
+.pricCards {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    justify-content: space-between;
+    gap: 150px; /* smaller gap, flexible */
+}
+
+.pricCard {
+    flex: 1 1 280px; /* responsive width with min width */
+    min-width: 280px;
+}
+
+.type {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.price p:not(.priceDesc) {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.price span {
+    color: #888;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
+.priceDesc {
+    color: #aaa;
+    font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+    line-height: 1.4;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    width: 100%;
+    max-width: 300px;
+    white-space: normal; /* fix text wrapping */
+    word-wrap: break-word; /* wrap long words */
+}
+
+.pricCard button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: 0.4s all ease;
+}
+
+.pricCard:first-child button {
+    background: transparent;
+    color: white;
+    border: 1px solid #a5a5a5;
+}
+
+.pricCard:first-child button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.pricCard:last-child button {
+    background: white;
+    color: black;
+    border: none;
+    font-weight: 700;
+}
+
+.pricFeatures ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricFeatures li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #ccc;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+}
+
+.gold ul li svg {
+    color: rgb(132, 124, 82);
+}
+
+/* Mobile Improvements */
+@media (max-width: 850px) {
+    .pricTop {
+        text-align: center; /* center the heading */
+        margin-bottom: 40px;
+    }
+
+    .pricTop h1 br {
+        display: none;
+    }
+
+    .pricCards {
+        flex-direction: column;
+        gap: 30px; /* smaller, consistent gap */
+        align-items: center; /* center cards horizontally */
+    }
+
+    .pricCard {
+        flex: 1 1 100%; /* take full width */
+        max-width: 350px; /* limit width so card isn’t too wide */
+        text-align: left; /* center content */
+    }
+
+    .price {
+        justify-content: left; /* center the price horizontally */
+    }
+
+    .priceDesc {
+        max-width: 100%; /* take full width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pricCard button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pricFeatures li {
+        justify-content: left; /* center feature text/icons */
+        gap: 8px;
+        font-size: clamp(0.85rem, 2vw, 0.95rem);
+    }
+}
