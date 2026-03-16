@@ -6,7 +6,6 @@ It is **not affiliated with Slash** — all original branding, design, and conte
 ---
 
 ## 🎨 Demo / Live Preview
-*(Optional: Add your Netlify/Vercel live link here)*
 [Live Site]([https://your-live-site.netlify.app](https://andriagosha.github.io/Stark/))
 
 ---
