@@ -6,7 +6,7 @@ It is **not affiliated with Slash** — all original branding, design, and conte
 ---
 
 ## 🎨 Demo / Live Preview
-[Live Site]([https://your-live-site.netlify.app](https://andriagosha.github.io/Stark/))
+[Live Site]([https://your-live-site.netlify.app](https://andriagosha.github.io/Stark/)](https://andriagosha.github.io/Stark/))
 
 ---
 
