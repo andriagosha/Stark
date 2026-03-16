@@ -78,15 +78,15 @@
 }
 
 .capabilities-content .capCards .capCard1 {
-    background-image: url("capabilities/cap1.png");
+    background-image: url("/src/assets/capabilities/cap1.png");
 }
 
 .capabilities-content .capCards .capCard2 {
-    background-image: url("capabilities/cap2.png");
+    background-image: url("/src/assets/capabilities/cap2.png");
 }
 
 .capabilities-content .capCards .capCard3 {
-    background-image: url("capabilities/cap3.png");
+    background-image: url("/src/assets/capabilities/cap3.png");
 }
 
 .capabilities-content .capCards .capCard h3, span {
