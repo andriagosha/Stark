@@ -64,15 +64,15 @@
 }
 
 .card1 {
-    background-image: url("cards/card1.png");
+    background-image: url(../../assets/cards/card1.png);
 }
 
 .card2 {
-    background-image: url("cards/card2.png");
+    background-image: url(../../assets/cards/card2.png);
 }
 
 .card3 {
-    background-image: url("cards/card3.png");
+    background-image: url(../../assets/cards/card3.png);
 }
 
 @media (max-width: 600px) {

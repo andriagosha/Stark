@@ -76,43 +76,43 @@
 
 .brand1 {
   animation-delay: calc(30s / 8 * (8 - 1) * -1);
-  background-image: url("brands/brand1.png");
+  background-image: url(../../assets/brands/brand1.png);
 
 }
 
 .brand2 {
   animation-delay: calc(30s / 8 * (8 - 2) * -1);
-  background-image: url("brands/brand2.png");
+  background-image: url(../../assets/brands/brand2.png);
 }
 
 .brand3 {
   animation-delay: calc(30s / 8 * (8 - 3) * -1);
-  background-image: url("brands/brand3.png");
+  background-image: url(../../assets/brands/brand3.png);
 }
 
 .brand4 {
   animation-delay: calc(30s / 8 * (8 - 4) * -1);
-  background-image: url("brands/brand4.png");
+  background-image: url(../../assets/brands/brand4.png);
 }
 
 .brand5 {
   animation-delay: calc(30s / 8 * (8 - 5) * -1);
-  background-image: url("brands/brand5.png");
+  background-image: url(../../assets/brands/brand5.png);
 }
 
 .brand6 {
   animation-delay: calc(30s / 8 * (8 - 6) * -1);
-  background-image: url("brands/brand6.png");
+  background-image: url(../../assets/brands/brand6.png);
 }
 
 .brand7 {
   animation-delay: calc(30s / 8 * (8 - 7) * -1);
-  background-image: url("brands/brand7.png");
+  background-image: url(../../assets/brands/brand7.png);
 }
 
 .brand8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
-  background-image: url("brands/brand8.png");
+  background-image: url(../../assets/brands/brand8.png);
 }
 
 @media (max-width: 1100px) {

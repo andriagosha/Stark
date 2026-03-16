@@ -119,16 +119,16 @@
 }
 
 .fin-checking {
-  background-image: url("grid/grid1.png");
+  background-image: url(../../assets/grid/grid1.png);
 }
 
 .fin-capital {
-  background-image: url("grid/grid2.png");
+  background-image: url(../../assets/grid/grid2.png);
 
 }
 
 .fin-wide-card {
-  background-image: url("grid/grid3.png");
+  background-image: url(../../assets/grid/grid3.png);
 
 }
 
